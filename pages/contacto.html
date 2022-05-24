@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./imagenes/faviconba.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/estilos.css">
+    <title>Rincones de Buenos Aires</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="bares.html">Bares</a></li>
+                <li><a href="restaurantes.html">Restaurantes</a></li>
+                <li><a href="librerias.html">Librerías</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h3 id="reserva">Hacé tu reserva:</h3>
+            <form action="">
+                <fieldset>
+                    <legend>Complete el formulario:</legend>
+                    <div>
+                        <label for="nombre">Nombre&nbsp;</label>
+                        <input type="text" name="nombre">
+                    </div>
+                    </div>
+                        <label for="apellido">Apellido</label>
+                        <input type="text" name="apellido">
+                    </div>
+                    <div>
+                        <label for="numero">Teléfono</label>
+                        <input type="text" name="numero" required>
+                    </div>
+                    <div>
+                        <label for="restaurant">Restaurant</label>
+                        <select name="restaurant">
+                            <option value="fro">13 Fronteras</option>
+                            <option value="boc">Bocabajo Bocarriba</option>
+                            <option value="tin">Tinta</option>
+                            <option value="roof">Rooftop</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="mensaje">Mensaje</label>
+                        <textarea name="mensaje" cols="40" rows="5" placeholder="Coloque el día y el horario al que desea asistir"></textarea>
+                    </div>
+                    <div>
+                        <input type="reset" value="Resetear Formulario">
+                        <input type="submit" value="Enviar">
+                    </div>               
+                </fieldset>
+            </form>
+    </main>
+    <footer>
+        Seguinos en nuestras redes sociales:
+        <a href="https://www.instagram.com/" target="_blank"><img src="../imagenes/ig.png" alt="instagram"></a>
+        <a href="https://twitter.com/home" target="_blank"><img src="../imagenes/tw.png" alt="twitter"></a>
+    </footer>
+</body>
