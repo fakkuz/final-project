@@ -161,6 +161,19 @@ form{
     display: flex;
 }
 
+.header-ind{
+    height: 10vh;
+}
+
+.main-ind{
+    height: 85vh;
+}
+
+.footer-ind{
+    height: 5vh;
+    display: flex;
+}
+
 footer div{
     align-items: flex-end;
     justify-content: center;
