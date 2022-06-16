@@ -1,0 +1,99 @@
+@import "reset";
+@import "nav";
+@import "footer";
+@import "pages";
+@import "contacto";
+
+@mixin topbottom($padd){
+    width: 100vw;
+    height: 45vh;
+    text-align: center;
+    padding-top: $padd;
+}
+
+@mixin hd{
+    height: 5vh;
+    display: flex;
+}
+
+body{
+    background-image: url(../imagenes/interior.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+}
+
+.header-ind{
+    height: 10vh;
+}
+
+.main-ind{
+    height: 85vh;
+    .top{
+        @include topbottom(4%);
+        .reserva{
+            background-color: #c9ac74;
+            border-radius: 4px;
+            padding: 8px;
+            text-decoration: none;
+            font-family: 'Cinzel Decorative', cursive;
+            color: white;
+        }
+    }
+    .bottom{
+        @include topbottom(6%);
+    }
+}
+
+.footer-ind{
+    @include hd();
+    div{
+        align-items: flex-end;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+}
+
+.header-contacto{
+    height: 10vh;
+}
+
+.main-contacto{
+    height: 85vh;
+}
+
+.footer-contacto{
+    @include hd();
+}
+
+h1{
+    font-family: 'Allura', cursive;
+    font-size: 5.1rem;
+    color: #ad8943;
+    text-shadow: 2px 2px 2px white;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+h3{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 3rem;
+    color: #8b6f37;
+    text-shadow: 4px 1px 0px rgb(26, 26, 26);
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+@media screen and (max-width: 576px){
+    .place{
+        width: 260px;
+        margin-right: 25px;
+    }
+    form{
+        margin-left: 7vw;
+    }
+    footer img{
+        height: 25px;
+        width: 25px;
+    }
+}
